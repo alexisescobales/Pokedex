@@ -20,10 +20,6 @@ function showPokemon ($pokemon){
     }
 } 
 
-function FunctionName()
-{
-    # code...
-}
 
 /*
 --Pimer pokemon informacion--
