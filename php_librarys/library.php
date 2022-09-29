@@ -20,6 +20,11 @@ function showPokemon ($pokemon){
     }
 } 
 
+function FunctionName()
+{
+    # code...
+}
+
 /*
 --Pimer pokemon informacion--
 'Numero' => 001,
