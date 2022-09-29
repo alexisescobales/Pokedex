@@ -1,7 +1,7 @@
 <?php
 
 function createPokemon ($numero, $nombre, $region, $tipo, $altura, $peso, $evolucion ,$imagen){
-    $pokemon = array [
+    $pokemon = [
         'Numero' => $numero,
         'Nombre' => $nombre,
         'Region' => $region,
@@ -14,11 +14,6 @@ function createPokemon ($numero, $nombre, $region, $tipo, $altura, $peso, $evolu
     return $pokemon;
 }  
 
-function showPokemon ($pokemon){
-    for ($i=0; $i < count($pokemon); $i++) { 
-        echo $pokemon[$i];
-    }
-} 
 
 ?>
 
