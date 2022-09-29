@@ -20,18 +20,6 @@ function showPokemon ($pokemon){
     }
 } 
 
-
-/*
---Pimer pokemon informacion--
-'Numero' => 001,
-'Nombre' => "Bulbasur",
-'Region' => "Kanto",
-'Tipo' => "Planta/Veneno",
-'Altura' => 0.7,
-'Peso' => 6.9,
-'Evolucion' => "Primera",
-'Imagen' => "./users/001.png"
-*/
 ?>
 
 
