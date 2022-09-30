@@ -12,7 +12,19 @@ function createPokemon ($numero, $nombre, $region, $tipo, $altura, $peso, $evolu
         'Imagen' => $imagen
     ];
     return $pokemon;
-}  
+}
+
+function showPokemon ($pokemon){
+    foreach ($pokemon as $item => $pokemons){
+        echo $item.": ".$pokemons."</br>";
+   }
+}
+
+function addPokedex ($pokemon){
+    $pokedex = array(
+    "Pokemons" => $pokemon);
+}
+
 
 
 ?>
