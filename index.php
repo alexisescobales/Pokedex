@@ -10,14 +10,21 @@ include ('./php_librarys/library.php'); ?>
 
 <?php
 
-$pokemon1 = createPokemon(001,"Bulbasur","Hoen","Veneno/Planta",70,6.9,"Primera Evolucion","./media/");
-$pokemon2 = createPokemon(002,"Ivysaur","Hoen","Veneno/Planta",100,13,"Primera Evolucion","./media/001.png");
+$pokemon1 = createPokemon(001,"Bulbasur","Hoen","Veneno/Planta",70,6.9,"Sin Evolucion","./media/001.png");
+$pokemon2 = createPokemon(002,"Ivysaur","Hoen","Veneno/Planta",100,13,"Primera Evolucion","./media/002.png");
+$pokemon3 = createPokemon(004,"Charmander","Jotho","Fuego",60,8.5,"Sin Evolucion","./media/003.png");
 showPokemon($pokemon1);
 echo "</br>";
 showPokemon($pokemon2);
+echo "</br>";
+showPokemon($pokemon3);
+
 
 addPokedex($pokemon1);
 addPokedex($pokemon2);
+addPokedex($pokemon3);
+
+
 ?>
 
 </body>
