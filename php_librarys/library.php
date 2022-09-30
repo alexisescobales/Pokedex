@@ -20,9 +20,9 @@ function showPokemon ($pokemon){
    }
 }
 
-function addPokedex ($pokemon){
-    $pokedex = array(
-    "Pokemons" => $pokemon);
+function addPokedex ($pokedex,$pokemon){
+    array_push($pokedex, $pokemon);
+    return $pokedex;
 }
 
 
