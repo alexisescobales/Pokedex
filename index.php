@@ -38,9 +38,11 @@ $pokedex = addPokedex($pokedex,$pokemon3);
 //----------------------------------------AÑADIR POKEMON A POKEDEX------------------------------------------//
 
 
-$pokedex = deletePokemon('001',$pokedex);
-print_r($pokedex);
 
+//----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
+$pokedex = deletePokemon('004',$pokedex);
+print_r($pokedex);
+//----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
 ?>
 
 </body>
