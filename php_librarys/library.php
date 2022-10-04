@@ -26,9 +26,27 @@ function addPokedex ($pokedex,$pokemon){
 }
 
 
-function deletePokemon ($num,$pokedex){
-    $key = array_search($num,$pokedex);    
-    return array_splice($pokedex,$key,4);
+function searchPokemon ($number,$pokedex){
+    $found = false;
+    $i = 0;
+    $index = -1;
+    $numPokemons = count($pokedex);
+
+    while ($i < $numPokemons && !$found) {
+        if($pokedex[$i]['Numero'] == $number){
+            $index = $i;
+            $found = true;
+        }else{
+            $i++;
+        }
+    }
+    return $index;
+}
+
+function deletePokemon ($number,$pokedex){
+    $index = searchPokemon($number,$pokedex);
+    array_splice($pokedex,$index,1);
+    return $pokedex;
 }
 
 ?>
