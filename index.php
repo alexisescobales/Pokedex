@@ -12,9 +12,9 @@ include ('./php_librarys/library.php'); ?>
 $pokedex = array();
 
 //----------------------------------------CREACION DE POKEMONS------------------------------------------//
-$pokemon1 = createPokemon(001,"Bulbasur","Hoen","Veneno/Planta",70,6.9,"Sin Evolucion","./media/001.png");
-$pokemon2 = createPokemon(002,"Ivysaur","Hoen","Veneno/Planta",100,13,"Primera Evolucion","./media/002.png");
-$pokemon3 = createPokemon(004,"Charmander","Jotho","Fuego",60,8.5,"Sin Evolucion","./media/003.png");
+$pokemon1 = createPokemon('001',"Bulbasur","Hoen","Veneno/Planta",'70','6.9',"Sin Evolucion","./media/001.png");
+$pokemon2 = createPokemon('002',"Ivysaur","Hoen","Veneno/Planta",'100','13',"Primera Evolucion","./media/002.png");
+$pokemon3 = createPokemon('004',"Charmander","Jotho","Fuego",'60','8.5',"Sin Evolucion","./media/003.png");
 //----------------------------------------CREACION DE POKEMONS------------------------------------------//
 
 
@@ -35,8 +35,11 @@ showPokemon($pokemon3);
 $pokedex = addPokedex($pokedex,$pokemon1);
 $pokedex = addPokedex($pokedex,$pokemon2);
 $pokedex = addPokedex($pokedex,$pokemon3);
-print_r($pokedex);
 //----------------------------------------AÑADIR POKEMON A POKEDEX------------------------------------------//
+
+
+$pokedex = deletePokemon('001',$pokedex);
+print_r($pokedex);
 
 ?>
 

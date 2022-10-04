@@ -26,6 +26,10 @@ function addPokedex ($pokedex,$pokemon){
 }
 
 
+function deletePokemon ($num,$pokedex){
+    $key = array_search($num,$pokedex);    
+    return array_splice($pokedex,$key,4);
+}
 
 ?>
 
