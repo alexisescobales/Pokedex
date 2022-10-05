@@ -49,6 +49,18 @@ function deletePokemon ($number,$pokedex){
     return $pokedex;
 }
 
+function modifyPokemon ($pokemon){
+    foreach($pokemon as $value){
+        echo "Introduce  ".key($pokemon);
+        fscanf(STDIN, "%s", $newvalue);
+        $pokemon[$value] = $newvalue;
+        next($pokemon);
+    }
+    return $pokemon;
+}
+
+function showPokedex ($pokedex){
+    print_r($pokedex);
+}
+
 ?>
-
-
