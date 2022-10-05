@@ -20,11 +20,11 @@ $pokemon3 = createPokemon('004',"Charmander","Jotho","Fuego",'60','8.5',"Sin Evo
 
 
 //----------------------------------------MOSTRAR POKEMONS------------------------------------------//
-showPokemon($pokemon1);
-echo "</br>";
-showPokemon($pokemon2);
-echo "</br>";
-showPokemon($pokemon3);
+//showPokemon($pokemon1);
+//echo "</br>";
+//showPokemon($pokemon2);
+//echo "</br>";
+//showPokemon($pokemon3);
 //----------------------------------------MOSTRAR POKEMONS------------------------------------------//
 
 
@@ -40,9 +40,13 @@ $pokedex = addPokedex($pokedex,$pokemon3);
 
 
 //----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
-$pokedex = deletePokemon('004',$pokedex);
-print_r($pokedex);
+//$pokedex = deletePokemon('004',$pokedex);
+
 //----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
+modifyPokemon($pokemon1);
+showPokemon($pokemon1);
+
+
 ?>
 
 </body>
