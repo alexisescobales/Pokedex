@@ -50,13 +50,15 @@ function deletePokemon ($number,$pokedex){
 }
 
 function modifyPokemon ($pokemon){
+    $modify_array = [];
     foreach($pokemon as $value){
-        echo "Introduce  ".key($pokemon);
+        echo "Introduce  ".key($pokemon).": ";
         fscanf(STDIN, "%s", $newvalue);
-        $pokemon[$value] = $newvalue;
+        array_push($modify_array,$newvalue);
         next($pokemon);
     }
-    return $pokemon;
+    print_r($modify_array);
+    return $modify_array;
 }
 
 function showPokedex ($pokedex){

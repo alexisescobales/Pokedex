@@ -43,7 +43,8 @@ $pokedex = addPokedex($pokedex,$pokemon3);
 //$pokedex = deletePokemon('004',$pokedex);
 
 //----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
-modifyPokemon($pokemon1);
+
+$pokemon1 = modifyPokemon($pokemon1);
 showPokemon($pokemon1);
 
 
