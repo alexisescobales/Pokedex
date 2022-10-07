@@ -109,6 +109,23 @@
 </fieldset>
 <!----------------------------------EVOLUCION------------------------------------------->
 
+
+<!----------------------------------IMAGEN/SUBMINT------------------------------------------------>
+<fieldset>
+<label for="imagen">Imagen</label>
+<input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg">
+</fieldset> <!--Peso-->
+<!----------------------------------IMAGEN/SUBMINT------------------------------------------------>
+
+
+<!----------------------------------SUBMINT------------------------------------------------>
+
+<fieldset>
+<input type="submit" value="Aceptar">
+<input type="url" id="cancel" name="cancel">
+</fieldset> <!--Peso-->
+<!----------------------------------SUBMINT------------------------------------------------>
+
 </form>
 
 </body>
