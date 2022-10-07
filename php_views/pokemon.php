@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Formulario Pokedex</title>
+<style>
+<?php include '../style/css.css'; ?>
+</style>
 </head>
 <body>
 
@@ -68,7 +71,7 @@
 <!--Psíquico-->
 <input type="checkbox" id="psiquico" name="psiquico" value="psiquico">
 <label for="psiquico">Psíquico</label>
-</fieldset> <!--Región-->
+</fieldset> 
 <!----------------------------------TIPO------------------------------------------->
 
 
@@ -88,7 +91,7 @@
 <fieldset>
 <label for="peso">Peso</label>
 <input type="number" name="peso" min="0" max="1000" step="0.01">
-</fieldset> <!--Peso-->
+</fieldset> 
 <!----------------------------------PESO-------------------------------------------->
 
 
@@ -114,7 +117,7 @@
 <fieldset>
 <label for="imagen">Imagen</label>
 <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg">
-</fieldset> <!--Peso-->
+</fieldset> 
 <!----------------------------------IMAGEN/SUBMINT------------------------------------------------>
 
 
@@ -122,8 +125,8 @@
 
 <fieldset>
 <input type="submit" value="Aceptar">
-<input type="url" id="cancel" name="cancel">
-</fieldset> <!--Peso-->
+<input type="submit" class="link-button" value="Cancelar"/>
+</fieldset> 
 <!----------------------------------SUBMINT------------------------------------------------>
 
 </form>
