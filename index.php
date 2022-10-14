@@ -1,12 +1,15 @@
 <?php
 include ('./php_librarys/library.php'); ?>
+<?php include './style/css_index.css'; ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Pokedex</title>
+<link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+<script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="background">
 
 <?php
 $pokedex = array();
@@ -28,25 +31,21 @@ showPokedex($pokedex);
 //----------------------------------------AÑADIR POKEMON A POKEDEX------------------------------------------//
 
 //----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
-$pokedex = deletePokemon('002',$pokedex);
+
 //----------------------------------------ELIMINAR POKEMON DE POKEDEX------------------------------------------//
 
 //----------------------------------------AÑADIR POKEMON A POKEDEX------------------------------------------//
-echo "[Pokedex con Yvysaur eliminado]"."<br>"."<br>";
-showPokedex($pokedex);
-$pokemon1 = modifyPokemon($pokemon1);
-showPokemon($pokemon1);
-showPokemon($pokemon2);
+
 //----------------------------------------AÑADIR POKEMON A POKEDEX------------------------------------------//
 
 
 
 //----------------------------------------MOSTRAR POKEMONS------------------------------------------//
-//showPokemon($pokemon1);
-//echo "</br>";
-//showPokemon($pokemon2);
-//echo "</br>";
-//showPokemon($pokemon3);
+showPokemon($pokemon1);
+echo "</br>";
+showPokemon($pokemon2);
+echo "</br>";
+showPokemon($pokemon3);
 //----------------------------------------MOSTRAR POKEMONS------------------------------------------//
 
 ?>
