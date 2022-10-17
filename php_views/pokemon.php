@@ -3,7 +3,7 @@
 <head>
 <title>Formulario Pokedex</title>
 <style>
-<?php include '../style/css.css'; ?>
+<?php include '../style/formulario.css'; ?>
 </style>
 </head>
 <body>
