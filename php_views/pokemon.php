@@ -64,79 +64,153 @@
 
 
                 <!----------------------------------TIPO------------------------------------------->
-                <fieldset>
-                    <label for="tipo">Tipo</label>
-                    <!--Veneno-->
-                    <input type="checkbox" id="veneno" name="veneno" value="veneno">
-                    <label for="veneno">Veneno</label>
-                    <!--Fuego-->
-                    <input type="checkbox" id="fuego" name="fuego" value="fuego">
-                    <label for="fuego">Fuego</label>
-                    <!--Volador-->
-                    <input type="checkbox" id="volador" name="volador" value="volador">
-                    <label for="volador">Volador</label>
-                    <!--Agua-->
-                    <input type="checkbox" id="agua" name="agua" value="agua">
-                    <label for="agua">Agua</label>
-                    <!--Eléctrico-->
-                    <input type="checkbox" id="electrico" name="electrico" value="electrico">
-                    <label for="electrico">Eléctrico</label>
-                    <!--Hada-->
-                    <input type="checkbox" id="hada" name="hada" value="hada">
-                    <label for="hada">Hada</label>
-                    <!--Lucha-->
-                    <input type="checkbox" id="lucha" name="lucha" value="lucha">
-                    <label for="lucha">Lucha</label>
-                    <!--Psíquico-->
-                    <input type="checkbox" id="psiquico" name="psiquico" value="psiquico">
-                    <label for="psiquico">Psíquico</label>
-                </fieldset>
-                <!----------------------------------TIPO------------------------------------------->
+                <div class="row mb-3">
+                    <label for="region" class="col-sm-1 col-form-label">Tipo</label>
+                    <div class="col-sm-10">
+                        <!----------------------------------VENENO------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="veneno" name="veneno" value="veneno">
+                            <label class="form-check-label" for="veneno"></label>
+                            <img src="../media/veneno.PNG">
+                        </div>
+                        <!----------------------------------FUEGO------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="fuego" name="fuego" value="fuego">
+                            <label class="form-check-label" for="fuego"></label>
+                            <img src="../media/fuego.PNG">
+                        </div>
+                        <!----------------------------------VOLADOR------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="volador" name="volador" value="volador">
+                            <label class="form-check-label" for="volador"></label>
+                            <img src="../media/volador.PNG">
+                        </div>
+                        <!----------------------------------AGUA------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="agua" name="agua" value="agua">
+                            <label class="form-check-label" for="agua"></label>
+                            <img src="../media/agua.PNG">
+                        </div>
+                        <!----------------------------------ELECTRICO------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="electrico" name="electrico"
+                                value="electrico">
+                            <label class="form-check-label" for="electrico"></label>
+                            <img src="../media/electrico.PNG">
+                        </div>
+                        <!----------------------------------HADA------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="hada" name="hada" value="hada">
+                            <label class="form-check-label" for="hada"></label>
+                            <img src="../media/hada.PNG">
+                        </div>
+                        <!----------------------------------LUCHA------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="lucha" name="lucha" value="lucha">
+                            <label class="form-check-label" for="lucha"></label>
+                            <img src="../media/lucha.PNG">
+                        </div>
+                        <!----------------------------------PSIQUICO------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="psiquico" name="psiquico"
+                                value="psiquico">
+                            <label class="form-check-label" for="psiquico"></label>
+                            <img src="../media/psiquico.PNG">
+                        </div>
+                        <!----------------------------------PLANTA------------------------------------------->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="planta" name="planta" value="planta">
+                            <label class="form-check-label" for="planta"></label>
+                            <img src="../media/planta.PNG">
+                        </div>
 
-
+                        <!----------------------------------2 COLUMNA EN TIPOS------------------------------------------->
+                        <div class="col-sm-10">
+                            <!----------------------------------BICHO------------------------------------------->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="bicho" name="bicho" value="bicho">
+                                <label class="form-check-label" for="bicho"></label>
+                                <img src="../media/bicho.PNG">
+                            </div>
+                            <!----------------------------------DRAGON------------------------------------------->
+                            <div class="dragon">
+                                <!-- div ya que checkbox dragon no estaba bien centrado-->
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dragon" name="dragon"
+                                        value="dragon">
+                                    <label class="form-check-label" for="dragon"></label>
+                                    <img src="../media/dragon.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
                 <!----------------------------------ALTURA------------------------------------------->
-                <fieldset>
-                    <label for="altura">Altura</label>
-                    <input type="number" name="altura" min="1" max="1000" step="0.1">
-                </fieldset>
+                <div class="row mb-3">
+                    <label for="altura" class="col-sm-1 col-form-label">Altura</label>
+                    <div class="col-sm-10">
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" name="altura" min="1" max="1000" step="0.1"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">cm</span>
+                        </div>
+                    </div>
+                </div>
                 <!----------------------------------ALTURA------------------------------------------->
 
 
 
 
                 <!----------------------------------PESO-------------------------------------------->
-                <fieldset>
-                    <label for="peso">Peso</label>
-                    <input type="number" name="peso" min="0" max="1000" step="0.01">
-                </fieldset>
+                <div class="row mb-3">
+                    <label for="peso" class="col-sm-1 col-form-label">Peso</label>
+                    <div class="col-sm-10">
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" name="peso" min="0" max="1000" step="0.01"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">kg</span>
+                        </div>
+                    </div>
+                </div>
                 <!----------------------------------PESO-------------------------------------------->
 
 
 
 
                 <!----------------------------------EVOLUCION------------------------------------------->
-                <fieldset>
-                    <label for="evolucion">Evolución</label>
-
-                    <input type="radio" id="sin_evolucionar" name="sin_evolucionar" value="sin_evolucionar">
-                    <label for="sin_evolucionar">Sin evolucionar</label>
-
-                    <input type="radio" id="primera_evolucion" name="primera_evolucion" value="primera_evolucion">
-                    <label for="primera_evolucion">Primera Evolucion</label>
-
-                    <input type="radio" id="otra_evolucion" name="otra_evolucion" value="otra_evolucion">
-                    <label for="otra_evolucion">Otras Evoluciones</label>
-                </fieldset>
+                <div class="row mb-3">
+                    <label for="evolucion" class="col-sm-1 col-form-label">Evolución</label>
+                    <div class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="sin_evolucion" name="inlineRadioOptions"
+                                value="sin_evolucion">
+                            <label class="form-check-label" for="sin_evolucion">Sin evolución</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="primera_evolucion"
+                                name="inlineRadioOptions" value="primera_evolucion">
+                            <label class="form-check-label" for="primera_evolucion">Primera Evolución</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="otras_evoluciones"
+                                name="inlineRadioOptions" value="otras_evoluciones">
+                            <label class="form-check-label" for="otras_evoluciones">Otras Evoluciones</label>
+                        </div>
+                    </div>
+                </div>
                 <!----------------------------------EVOLUCION------------------------------------------->
 
 
                 <!----------------------------------IMAGEN/SUBMINT------------------------------------------------>
-                <fieldset>
-                    <label for="imagen">Imagen</label>
-                    <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg">
-                </fieldset>
+                <div class="row mb-3">
+                    <label for="numero" class="col-sm-1 col-form-label">Imagen</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" id="imagen" name="imagen"
+                            accept="image/png, image/jpeg" placeholder="Elige La Imagen Del Pokemon">
+                    </div>
+                </div>
                 <!----------------------------------IMAGEN/SUBMINT------------------------------------------------>
 
 
@@ -144,7 +218,7 @@
 
                 <fieldset>
                     <input type="submit" value="Aceptar">
-                    <input type="submit" class="link-button" value="Cancelar" />
+                    <input type="submit" class="link-button" value="Cancelar"/>
                 </fieldset>
                 <!----------------------------------SUBMINT------------------------------------------------>
 
