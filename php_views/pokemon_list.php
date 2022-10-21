@@ -1,10 +1,11 @@
-<?php
-include ('../php_librarys/library.php'); ?>
-<?php include '../style/css_index.css'; ?>
+<?php include ('../php_librarys/library.php'); ?>
+<style>
+<?php include '../style/css_datos_maestros.css';
+?>
+</style>
 
 <!DOCTYPE html>
 <html lang="en">
-<php></php>
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +14,7 @@ include ('../php_librarys/library.php'); ?>
     <title>Datos Maestros</title>
     <link rel="stylesheet" href="../bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body class="background">
@@ -46,34 +48,57 @@ include ('../php_librarys/library.php'); ?>
 
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-6 g-4">
-            <div class="col">
-                <div class="card border-secondary h-100">
+            <div class="col p-3">
+                <div class="card border-secondary h-100 ">
                     <img src="../media/001.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">001 - Bulbasur</h5>
                         <span class="badge bg-success text-dark">Planta</span>
-                        <span class="badge bg-warning text-dark">Veneneo</span>
+                        <span class="badge bg-warning text-dark">Veneno</span>
                         <p class="card-text"></p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer ">
+                        <form>
+                            <div class="position-absolute bottom-0 end-0">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card border-secondary">
+            <div class="col p-3">
+                <div class="card border-secondary h-100">
                     <img src="../media/002.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">002 - Ivysaur</h5>
                         <span class="badge bg-success text-dark">Planta</span>
-                        <span class="badge bg-warning text-dark">Veneneo</span>
+                        <span class="badge bg-warning text-dark">Veneno</span>
                         <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
+                        <form>
+                            <div class="position-absolute bottom-0 end-0">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card border-secondary">
+
+
+
+            <div class="col p-3">
+                <div class="card border-secondary h-100">
                     <img src="../media/003.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">003 - Charmander</h5>
@@ -81,11 +106,24 @@ include ('../php_librarys/library.php'); ?>
                         <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
+                        <form>
+                            <div class="position-absolute bottom-0 end-0">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card border-secondary">
+
+
+
+            <div class="col p-3">
+                <div class="card border-secondary h-100">
                     <img src="../media/004.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">004- Squirtle</h5>
@@ -93,12 +131,25 @@ include ('../php_librarys/library.php'); ?>
                         <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
+                        <form>
+                            <div class="position-absolute bottom-0 end-0">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card border-secondary">
-                    <img src="../media/005.png" class="card-img-top" alt="...">
+
+
+
+            <div class="col p-3">
+                <div class="card border-secondary h-100">
+                    <img src="../media/006.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">005 - Jigglypuff</h5>
                         <span class="badge bg-secondary text-dark">Normal</span>
@@ -106,9 +157,52 @@ include ('../php_librarys/library.php'); ?>
                         <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
+                        <form>
+                            <div class="position-absolute bottom-0 end-0">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="col p-3">
+                <div class="card border-secondary h-100">
+                    <img src="../media/007.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">005 - Jigglypuff</h5>
+                        <span class="badge bg-secondary text-dark">Normal</span>
+                        <span class="badge bg-warning text-dark">Hada</span>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <form>
+                            <div class="position-absolute bottom-0 end-0 ">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plus">
+            <a href="../php_views/pokemon.php" title="Website name"><i class="bi bi-plus-circle"></i></a>
+            </div>
+
+
+
         </div>
     </div>
 

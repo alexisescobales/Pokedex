@@ -1,10 +1,11 @@
-<?php
-include ('./php_librarys/library.php'); ?>
+<?php include ('./php_librarys/library.php'); ?>
+<style>
 <?php include './style/css_index.css'; ?>
+</style>
+
 
 <!DOCTYPE html>
 <html lang="en">
-    <php></php>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
