@@ -24,7 +24,6 @@ body{
     height: 520px;
     width: 260px;
     border: 2px solid black;
-    background-image: url(../media/grid.png);
     background-size: 156px , 156px;
 }
 
